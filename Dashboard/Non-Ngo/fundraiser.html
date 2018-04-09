@@ -169,12 +169,25 @@
                 </tbody>
                 </table>
             </div>
+                    
+         <div class="box-footer">
+        <a class="btn   btn-info " id="start">Start a FundRaiser</a>
+                      
+            <br>
+            <br>
+            <br>
+            <div class="fundbuttons" style="display: none">
+                <a href="./personalFund.html" class="btn  btn-info">Personal</a>
+                <a href="./ngofund.html" class="btn   btn-info">NGO/Charity</a>
+                <a href="./creativefund.html" class="btn   btn-info">Creative</a>
+            </div>
+            </div>
+            <br>
             <!-- /.box-body -->
           </div>
           </section>
           <!-- /.box -->
-
-      
+        
     </div>
   
     
@@ -220,6 +233,12 @@
       'autoWidth'   : false
     })
   })
+        $(function () {
+    $("#start").click(function(){
+       $('.fundbuttons').toggle();
+    });
+   
+});
 </script>
     
     </body>
