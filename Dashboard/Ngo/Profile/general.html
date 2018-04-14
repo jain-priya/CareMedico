@@ -13,6 +13,7 @@
   <!-- Ionicons -->
   <link rel="stylesheet" href="../../bower_components/Ionicons/css/ionicons.min.css">
   <!-- Theme style -->
+  
   <link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
       <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
@@ -167,6 +168,7 @@
               <div class="box-body row">
                
                <div class="col-md-6">
+               
                 <div class="form-group">
                   <label for="fullName">Organisation</label>
                   <input type="text" class="form-control" id="fullName" name="fullName">
@@ -175,17 +177,15 @@
                   <label for="email">User Name/Email</label>
                   <input type="email" class="form-control" id="email"  name="email" disabled>
                 </div>
-<!--
                 <div class="form-group">
                   <label for="logo">Upload Logo Image</label>
                   <input type="file" id="logo">
                 </div>
--->
                
                
                 <div class="form-group">
                   <label for="city">City</label>
-                  <input type="email" class="form-control" id="city"  name="city" >
+                  <input type="text" class="form-control" id="city"  name="city" >
                 </div>
                 <div class="form-group">
                   <label>Country</label>
@@ -500,11 +500,11 @@
               <div class="col-md-6">
               
               <div class="form-group">
-                <label >Custom Url</label>
+                <label for="url">Custom Url</label>
 
                 <div class="input-group">
                   
-                  <input type="text" class="form-control"   name="url">
+                  <input type="text" class="form-control" id="url"  name="url">
                   <div class="input-group-addon">
                   .caremedico.org
                   </div>
@@ -515,66 +515,10 @@
                 <label>Cause</label>
                 <select class="form-control select2" multiple="multiple" data-placeholder="Select a cause supported by the organisation"
                         style="width: 100%;" name="cause">
-                  <option value="children">Children</option>
-                  <option value="education">Education</option>
-                  <option value="health">Health</option>
-                  <option value="sports">Sports</option>
-                  <option value="womenEmp">Women Empowerment</option>
-                  <option value="physchallenge">Physically Challenged</option>
-                  <option value="elderly">Elderly</option>
-                  <option value="env">
-                      Environment
-                  </option>
-                  <option value="socialent">
-                      Social Entrepreneurship
-                  </option>
-                  <option value="animalwel">
-                      Animal Welfare
-                  </option>
-                  <option value="food">Food</option>
-                  
-                  <option value="roadsafety">Road Safety</option>
-                  
-                  <option value="childmarriage">Child Marriage</option>
-                  
-                  <option value="rehabilitation">Rehabilitation</option>
-                  
-                  <option value="film">Film</option>
-                  
-                  <option value="music">Music</option>
-                    
-                  <option value="fashion">Fashion</option>
-                  
-                  
-                  <option value="travel">Travel</option>
-                  
-                  <option value="theatre">Theatre</option>
-                  
-                  <option value="technology">Technology</option>
-                  
-                  <option value="gender">Gender Based Violence</option>
-                  
-                  <option value="advocacy">Advocacy</option>
-                  
-                  <option value="disaster">Disaster Relief</option>
-                  
-                  <option value="waste">Waste Management</option>
-                  
-                  <option value="farmer">Farmers</option>
-                  
-                  <option value="water">Water Management</option>
-                  
-                  <option value="peace">Peace</option>
-                  
-                  <option value="rural">Rural Development</option>
-                  
-                  <option value="lgbt">LGBT</option>
-                  
-                  <option value="acid">Acid Attack Victims</option>
-                  <option value="religious">Religious Institutions</option>
-                  <option value="scholrship">Scholarship</option>
-                  <option value="other">Others</option>
-                </select>
+              
+                <option value="1" label="Children">Children</option><option value="2" label="Education">Education</option><option value="3" label="Women Empowerment">Women Empowerment</option><option value="4" label="Health">Health</option><option value="5" label="Sports">Sports</option><option value="6" label="Animal Welfare">Animal Welfare</option><option value="7" label="Physically Challenged">Physically Challenged</option><option value="8" label="Elderly">Elderly</option><option value="9" label="Environment">Environment</option><option value="10" label="Social Entrepreneurship">Social Entrepreneurship</option><option value="11" label="Disaster Relief">Disaster Relief</option><option value="12" label="Rural Development">Rural Development</option><option value="13" label="Road Safety">Road Safety</option><option value="14" label="Community Development ">Community Development </option><option value="16" label="Child Marriage">Child Marriage</option><option value="17" label="Rehabilitate">Rehabilitate</option><option value="21" label="Advocacy">Advocacy</option><option value="22" label="Festivals">Festivals</option><option value="23" label="Travel">Travel</option><option value="24" label="Theatre">Theatre</option><option value="25" label="Technology ">Technology </option><option value="26" label="Film">Film</option><option value="27" label="Music">Music</option><option value="28" label="Fashion">Fashion</option><option value="29" label="Gender-based Violence ">Gender-based Violence </option><option value="30" label="Waste Management">Waste Management</option><option value="31" label="Farmers">Farmers</option><option value="32" label="Food &amp; Hunger">Food &amp; Hunger</option><option value="33" label="Acid Attack Victim">Acid Attack Victim</option><option value="35" label="LGBT">LGBT</option><option value="36" label="Agriculture">Agriculture</option><option value="37" label="Energy">Energy</option><option value="39" label="Mental Health">Mental Health</option><option value="40" label="Preservation of Culture">Preservation of Culture</option><option value="41" label="Environmental Care">Environmental Care</option><option value="42" label="Transforming Radicals &amp; Extremists">Transforming Radicals &amp; Extremists</option><option value="43" label="Peace in the times of conflict">Peace in the times of conflict</option><option value="44" label="World Culture Festival">World Culture Festival</option><option value="45" label="Peace">Peace</option><option value="46" label="Religious Instituition">Religious Instituition</option><option value="47" label="Entrepreneur ">Entrepreneur </option><option value="50" label="Sterilizations">Sterilizations</option><option value="51"  label="Adoptions">Adoptions</option><option value="52" label="Rescues">Rescues</option><option value="53" label="WFA Teach Co-exist School Program">WFA Teach Co-exist School Program</option><option value="54" label="Financial Inclusion">Financial Inclusion</option><option value="55" label="Soldier Wellbeing">Soldier Wellbeing</option><option value="56" label="Water Scarcity">Water Scarcity</option><option value="112" label="Welfare of Animals">Welfare of Animals</option><option value="115" label="Ride Bicycles, Not Elephants">Ride Bicycles, Not Elephants</option><option value="116" label="Water Revolution">Water Revolution</option><option value="117" label="Animal Rights">Animal Rights</option><option value="118" label="Nutrition">Nutrition</option><option value="119" label="Youth Empowerment">Youth Empowerment</option><option value="120" label="Animal Welfare - Kaziranga Flood">Animal Welfare - Kaziranga Flood</option><option value="122" label="Orphans">Orphans</option><option value="123" label="Gender Equality">Gender Equality</option><option value="124" label="Sanitation">Sanitation</option><option value="125" label="Quality Education">Quality Education</option><option value="126" label="Water, Sanitation &amp; Hygiene">Water, Sanitation &amp; Hygiene</option><option value="127" label="Indian Army">Indian Army</option><option value="128" label="Homeless">Homeless</option><option value="129" label="Wildlife Conservation">Wildlife Conservation</option><option value="130" label="Mental disability">Mental disability</option><option value="132" label="Police Welfare">Police Welfare</option><option value="135" label="Vision Care">Vision Care</option><option value="136" label="Prosthetic Legs">Prosthetic Legs</option><option value="137" label="Skill development and Disability">Skill development and Disability</option><option value="138" label="Culture">Culture</option><option value="139" label="Netranjali">Netranjali</option><option value="140" label="Road Smarrt ">Road Smarrt </option><option value="141" label="Swayam">Swayam</option><option value="142" label="Saksham ">Saksham </option><option value="143" label="Sanjeevani">Sanjeevani</option><option value="144" label="Jeevan ">Jeevan </option><option value="145" label="Pehlay Akshar School Enrichment Program ">Pehlay Akshar School Enrichment Program </option><option value="146" label="Pehlay Akshar ">Pehlay Akshar </option><option value="147" label="The Paper Boat Project ">The Paper Boat Project </option><option value="148" label="Elephant Corridor">Elephant Corridor</option><option value="152" label="Scholarships for Martyrs' children">Scholarships for Martyrs' children</option>
+                 
+                                                 </select>
                   </div>
                  <div class="form-group">
                   <label for="address">Address</label>
@@ -593,15 +537,16 @@
         </div>
             <!-- /.box-header -->
             <div class="box-body pad">
-              <form>
+              
                 <textarea class="textarea" placeholder="Place some text here"
                           style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
-              </form>
+              
             </div>
           </div>
                  
                   </div>
                 <hr>
+                <div class="row side_space">
                 <div class="col-md-6">
                     <div class="form-group">
                   <label for="password1">New Password</label>
@@ -614,11 +559,11 @@
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                  <label for="password2">Confirm Password</label>
-                  <input type="password" class="form-control" id="password2" name="password">
+                  <label for="password3">Confirm Password</label>
+                  <input type="password" class="form-control" id="password3" name="password">
                 </div>
                 </div>
-                
+                </div>
                 
                     <div class="form-group side_space">
                   <div class="checkbox">
@@ -663,7 +608,6 @@
   
 </div>
 <!-- ./wrapper -->
-
 <!-- jQuery 3 -->
 <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
