@@ -1409,6 +1409,7 @@ color: #53d0c6;
    background: #29292A;
   padding: 1.5em 0 0em 0;
   text-align: left;
+  
 }
 .footer-grids h3{
    color: #53D0C6;
@@ -1432,6 +1433,15 @@ color: #53d0c6;
 .footer-info {
   float: right;
 }
+
+
+.special-footer{
+     position:absolute;
+   bottom:0;
+   width:100%;
+
+}
+
 .flickr-grid {
   float: left;
   width: 25%;
@@ -2420,4 +2430,20 @@ color: #53d0c6;
 	  float: none;
 	  margin-top: 1em;
   }
+}
+
+
+
+.special-submit-btn{
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    width: 20%;
+    border-radius: 0;
+}
+
+@media(max-width:990px){
+    .special-submit-btn{
+        top: 62%;
+    }
 }
