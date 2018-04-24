@@ -105,8 +105,8 @@
       </h1>
 <div class="container">
       
-  
-
+            <div id="errmessage" class="alert alert-danger" style="display:none"></div>
+          
     <!-- Main content -->
     <section>
       
@@ -151,7 +151,7 @@
                   <div class="input-group-addon">
                     <i class="fa fa-calendar"></i>
                   </div>
-                  <input type="text" class="form-control pull-right" id="datepicker5" name="end_date" placeholder="Choose a fundraiser end date">
+                  <input type="text" class="form-control pull-right" id="datepicker5 end_date" name="end_date" placeholder="Choose a fundraiser end date">
                 </div>
                 <br>
              <div class="box">
@@ -164,7 +164,7 @@
             <div class="box-body pad">
               <form>
                 <textarea class="textarea" placeholder="Place some text here"
-                          style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" name="campaign_desc"></textarea>
+                          style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" name="campaign_desc"  id="campaign_desc" ></textarea>
               </form>
             </div>
           </div>
@@ -198,8 +198,9 @@
 <script src="../dist/js/demo.js"></script>
 <script src="../bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
 
-<script src="../plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
-
+<script src="../plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js">
+    </script>
+<script src="editfundraiser.js"></script>
 <script>
  $('#datepicker5').datepicker({
       autoclose: true
