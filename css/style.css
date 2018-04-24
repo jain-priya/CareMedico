@@ -2447,3 +2447,24 @@ color: #53d0c6;
         top: 62%;
     }
 }
+
+
+
+.lineforor
+{ width:100%;
+    text-align:center; 
+/*    border-bottom: 1px solid grey; */
+line-height:0.1em; 
+    margin:10px 0 20px; 
+}
+.lineforor span
+{
+    background:#fff; 
+    padding:0 10px;    
+}
+
+
+.ngobtn{
+    border-radius: 0px;
+    width: 100%;
+}
